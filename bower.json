@@ -14,6 +14,8 @@
   ],
   "dependencies": {
     "backbone": "^1.3.3",
-    "rivets": "^0.9.4"
+    "rivets": "^0.9.4",
+    "mocha": "^3.0.2",
+    "expect.js": "^0.3.1"
   }
 }

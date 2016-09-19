@@ -1,7 +1,31 @@
 doctype html
 html
   head
-    title= title
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    link(href="/components/mocha/mocha.css", rel="stylesheet")
+
     link(rel='stylesheet', href='/stylesheets/style.css')
+
   body
     block content
+
+    #mocha
+
+    block scripts
+
+    script(src="/components/expect.js/index.js")
+    script(src="/components/mocha/mocha.js")
+    
+    script().
+      mocha.setup('bdd')
+    
+    script(src="/javascripts/test.js")
+    
+    script().
+      document.addEventListener('DOMContentLoaded', function(e) {
+        mocha.checkLeaks();
+        mocha.run();
+      });
