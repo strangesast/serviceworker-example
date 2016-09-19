@@ -1,0 +1,19 @@
+{
+  "name": "serviceworker-example",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "Sam Zagrobelny <strangesast@gmail.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "^1.3.3",
+    "rivets": "^0.9.4"
+  }
+}
